@@ -6,17 +6,20 @@ const button = document.getElementById(`switch`)
 button.addEventListener(`click`, function () {
 
   //con questa funzione vado a modificare direttamente il valore del src cosi da alternare l'immagine
+
+
+  // lamp.src = (`img/yellow_lamp.png`)
+
   //creo la condizione per permettere alla lampadina di essere accesa o spenta ad ogni click
 
-  lamp.src = (`img/yellow_lamp.png`)
+  //se la lampadina è accesa, la spengo, altrimenti l'accendo 
 
-  // if (lamp.src.contains(`img/yellow_lamp.png`)) {
-  //   lamp.src.add(`img/white_lamp.png`);
-  //   lamp.src.remove(`img/yellow_lamp.png`)
-  // }
-  // else (lamp.src.contains(`img/white_lamp.png`))
-  // lamp.src.add(`img/yellow_lamp.png`);
-  // lamp.src.remove(`img/white_lamp.png`)
+  if (lamp.src.includes(`img/yellow_lamp.png`)) {
+    lamp.src = `img/white_lamp.png`
+  }
+  else
+    lamp.src = `img/yellow_lamp.png`
+
 
 
 
